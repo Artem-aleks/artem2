@@ -6,9 +6,7 @@ def ft_len(b):
 
 
 def ft_strtlist(x):
-    a = []
-    z = 0
-    while z != ft_len(x):
-        a.append(x[z])
-        z = z+1
+    z = []
+    for i in x:
+        z.append(i)
     return z

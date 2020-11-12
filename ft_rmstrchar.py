@@ -5,11 +5,12 @@ def ft_len(b):
     return s
 
 
-def ft_rmstrchar(x, z):
-    a = ""
-    m = 0
-    while m != ft_len(x):
-        if x[m] != z:
-            a = a + x[m]
-    m = m + 1
-    return a
+def ft_rmstrchar(x, n):
+    z = ""
+    num = 0
+    for i in x:
+        if i not in n:
+            z = z + i
+        if i in n:
+            num = num + 1
+    return z

@@ -4,25 +4,18 @@ def ft_len(b):
         s += 1
     return s
 
-def ft_odd_even_separator_lst(x):
-    a = 0
+
+def ft_pos_neg_separator_lst(x):
+    z = []
+    c = []
+    f = []
+    n = []
     for i in x:
-        a += 1
-    vt = a
-    i = 0
-    t = []
-    nc = []
-    num = []
-    com = [[0], [0]]
-    for i in range(vt):
-        if x[i] > 0:
-            t.append(x[i])
-        elif x[i] < 0:
-            nc.append(x[i])
+        if i == 0:
+            c = c + [i]
+        elif i > 0:
+            f = f + [i]
         else:
-            num.append(x[i])
-        i += 1
-    com[0] = nc
-    com[1] = num
-    com[2] = c
-    return com
+            z = z + [i]
+    n = [z, c, f]
+    return n

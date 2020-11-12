@@ -5,15 +5,9 @@ def ft_len(b):
     return s
 
 
-def ft_sum_even_lst(x):
-    a = 0
+def ft_sum_even_part_lst(x):
+    z = 0
     for i in x:
-        a += 1
-    i = 0
-    t = a
-    rem = 0
-    for i in range(t):
-        if x[i] % 2 == 0:
-            rem = rem + x[i]
-        i = i + 1
-    return x
+        if i % 2 == 0:
+            z = z + i
+    return z
