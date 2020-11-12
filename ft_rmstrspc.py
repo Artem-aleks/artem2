@@ -10,6 +10,6 @@ def ft_rmstrspc(x):
     b = 0
     while b != ft_len(x):
         if x[b] != " ":
-    a = a + x[b]
-    b = b + 1
+        a = a + x[b]
+        b = b + 1
     return a
